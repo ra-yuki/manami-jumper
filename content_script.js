@@ -11,7 +11,7 @@ var callback = function(mutationsList) {
         var condition3 = docs[i].innerText != "HOME" && docs[i].innerText != "STUDY" && docs[i].innerText != "ROOM" && docs[i].innerText != "LOG" && docs[i].innerText != "TRY" && docs[i].innerText != "STUDY" && docs[i].innerText != "SETTING";
 
         if(condition && condition2 && condition3)
-            docs[i].innerHTML += injectHTML.replace("@q", "smosh").replace("@k", docs[i].innerText);
+            docs[i].innerHTML += injectHTML.replace("@q", "ted").replace("@k", docs[i].innerText);
     }
 
     //injecting css to existing tag
