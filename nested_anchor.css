@@ -1,0 +1,33 @@
+.block {
+    width: 200px;
+    height: 300px;
+    background-color:#dedede;
+    position:relative;
+    padding: 20px;
+  }
+  
+  .block .overlay {
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+  }
+  .block .overlay:hover {
+    background-color: #efefef;
+  }
+  
+  .block .inner {
+    position:relative;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .block .inner a {
+    pointer-events: all;
+    position:relative;
+  }
+  
+  a:hover {
+    color: green;
+  }

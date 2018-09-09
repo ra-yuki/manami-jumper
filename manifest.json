@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Content Scripts Jam",
+    "version": "1.0",
+    "description": "Jamming around with content scripts",
+    "icons": {
+        "128": "img/icon128.png",
+        "48": "img/icon48.png",
+        "16": "img/icon16.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.ma-na-me.com/app/*"],
+            "css": ["bootstrap.css", "nested_anchor.css"],
+            "js": ["content_script.js"]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "img/icon16.png",
+        "default_popup": "popup.html"
+    }
+}
