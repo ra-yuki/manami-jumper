@@ -1,6 +1,6 @@
 var targetNode = document.getElementById("container");
 var config = {childList: true, subtree: true};
-var injectHTML = "<a href=\"http://localhost:8080/manami?q=@q&k=@k\" class=\"btn btn-danger\" target=\"_blank\">▶</a>";
+var injectHTML = "<a href=\"http://manatube.azurewebsites.net/manami?q=@q&k=@k\" class=\"btn btn-danger\" target=\"_blank\">▶</a>";
 
 var callback = function(mutationsList) {
     var docs = document.getElementsByTagName("span");
